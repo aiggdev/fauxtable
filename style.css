@@ -1,0 +1,121 @@
+    .faux-table {
+      position: relative;
+      top: 3px;
+      left: 3px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 0 3em 0;
+      padding: 0;
+    }
+
+    .faux-table-cell {
+      box-sizing: border-box;
+      flex-grow: 1;
+      width: 100%;
+      padding: .9rem;
+      margin: -3px 0 0 -3px;
+      overflow: hidden;
+      list-style: none;
+      border: solid 3px #e2e6e9;
+      background-color: rgba(236, 239, 241, 0.39);
+    }
+
+    .half>.faux-table-cell {
+      width: 50%;
+    }
+
+    .third>.faux-table-cell {
+      width: 33.33%;
+    }
+
+    .quarter>.faux-table-cell {
+      width: 25%;
+    }
+
+    .fifth>.faux-table-cell {
+      width: 20%;
+    }
+
+    .faux-table h3 {
+      font-size: .99em;
+      margin: .33rem 0;
+    }
+
+    .faux-table strong {
+      color: #37474F;
+    }
+
+    .faux-table a {
+      color: #4A148C;
+      text-decoration: none;
+    }
+
+    .faux-table a:hover {
+      text-decoration: underline;
+    }
+
+    .faux-table-cell--highlight {
+      background-color: #fff !important;
+      border: 3px solid #eee !important;
+      font-weight: 700;
+    }
+
+    .faux-table-cell--head {
+      background-color: #4A148C;
+      border-color: #fff;
+      color: white;
+    }
+
+    .faux-table-cell--head:hover {
+      background-color: #AD1457;
+    }
+
+    .faux-table-cell--empty {
+      background-color: rgb(255, 255, 255);
+      border-color: #e2e6e9;
+      border-bottom: none;
+    }
+
+    .faux-table-cell--empty---last {
+      background-color: rgb(255, 255, 255);
+      border-color: #e2e6e9;
+      border-top: none;
+    }
+
+    .faux-table-cell--foot {
+      background-color: #ECEFF1 !important;
+      border-color: #e2e6e9;
+      border-top: none;
+    }
+
+    @media all and (max-width: 500px) {
+      .faux-table--collapse {
+        display: block;
+      }
+
+      .faux-table--collapse>.faux-table-cell {
+        width: 100% !important;
+      }
+
+      .faux-table--collapse>.faux-table-cell--foot {
+        margin-bottom: 1em;
+        margin-top: 0;
+      }
+
+      .faux-table-cell--empty---last {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .no-flexbox .faux-table {
+      display: block;
+    }
+
+    .no-flexbox .faux-table>.faux-table-cell {
+      width: 100%;
+    }
+
+    .no-flexbox .faux-table>.faux-table-cell--foot {
+      margin-bottom: 1em;
+    }
