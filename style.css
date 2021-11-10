@@ -1,4 +1,4 @@
-    .faux-table {
+    .fauxtable {
       position: relative;
       top: 3px;
       left: 3px;
@@ -9,7 +9,7 @@
       padding: 0;
     }
 
-    .faux-table-cell {
+    .fauxtable-cell {
       box-sizing: border-box;
       flex-grow: 1;
       width: 100%;
@@ -21,101 +21,101 @@
       background-color: rgba(236, 239, 241, 0.39);
     }
 
-    .half>.faux-table-cell {
+    .half>.fauxtable-cell {
       width: 50%;
     }
 
-    .third>.faux-table-cell {
+    .third>.fauxtable-cell {
       width: 33.33%;
     }
 
-    .quarter>.faux-table-cell {
+    .quarter>.fauxtable-cell {
       width: 25%;
     }
 
-    .fifth>.faux-table-cell {
+    .fifth>.fauxtable-cell {
       width: 20%;
     }
 
-    .faux-table h3 {
+    .fauxtable h3 {
       font-size: .99em;
       margin: .33rem 0;
     }
 
-    .faux-table strong {
+    .fauxtable strong {
       color: #37474F;
     }
 
-    .faux-table a {
+    .fauxtable a {
       color: #4A148C;
       text-decoration: none;
     }
 
-    .faux-table a:hover {
+    .fauxtable a:hover {
       text-decoration: underline;
     }
 
-    .faux-table-cell--highlight {
+    .fauxtable-cell--highlight {
       background-color: #fff !important;
       border: 3px solid #eee !important;
       font-weight: 700;
     }
 
-    .faux-table-cell--head {
+    .fauxtable-cell--head {
       background-color: #4A148C;
       border-color: #fff;
       color: white;
     }
 
-    .faux-table-cell--head:hover {
+    .fauxtable-cell--head:hover {
       background-color: #AD1457;
     }
 
-    .faux-table-cell--empty {
+    .fauxtable-cell--empty {
       background-color: rgb(255, 255, 255);
       border-color: #e2e6e9;
       border-bottom: none;
     }
 
-    .faux-table-cell--empty---last {
+    .fauxtable-cell--empty---last {
       background-color: rgb(255, 255, 255);
       border-color: #e2e6e9;
       border-top: none;
     }
 
-    .faux-table-cell--foot {
+    .fauxtable-cell--foot {
       background-color: #ECEFF1 !important;
       border-color: #e2e6e9;
       border-top: none;
     }
 
     @media all and (max-width: 500px) {
-      .faux-table--collapse {
+      .fauxtable--collapse {
         display: block;
       }
 
-      .faux-table--collapse>.faux-table-cell {
+      .fauxtable--collapse>.fauxtable-cell {
         width: 100% !important;
       }
 
-      .faux-table--collapse>.faux-table-cell--foot {
+      .fauxtable--collapse>.fauxtable-cell--foot {
         margin-bottom: 1em;
         margin-top: 0;
       }
 
-      .faux-table-cell--empty---last {
+      .fauxtable-cell--empty---last {
         margin-bottom: 1rem;
       }
     }
 
-    .no-flexbox .faux-table {
+    .no-flexbox .fauxtable {
       display: block;
     }
 
-    .no-flexbox .faux-table>.faux-table-cell {
+    .no-flexbox .fauxtable>.fauxtable-cell {
       width: 100%;
     }
 
-    .no-flexbox .faux-table>.faux-table-cell--foot {
+    .no-flexbox .fauxtable>.fauxtable-cell--foot {
       margin-bottom: 1em;
     }
