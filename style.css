@@ -89,7 +89,7 @@
       border-top: none;
     }
 
-    @media all and (max-width: 930px) {
+    @media all and (max-width: 680px) {
       .fauxtable--collapse {
         display: block;
       }
